@@ -5,5 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-        <include file="db/0.1.0/0.1.0-master.xml"/>
+    <include file="db/0.1.0/base_security/01_create-table_account.xml"/>
+<!--    todo: убрать из "боевого" коммита -->
+    <include file="db/0.1.0/base_security/02_insert_test-data.xml"/>
 </databaseChangeLog>
